@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 const links = [
   "Issues",
   "Articles",
-  "Multimedia",
   "Contributors",
   "About",
 ];
