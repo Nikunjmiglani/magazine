@@ -15,8 +15,9 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "The Fig Tree",
-  description: "Editorial Magazine",
+  title: "Cordastra Literary",
+  description:
+    "A literary journal exploring essays, poetry, culture, art, and storytelling.",
 };
 
 export default function RootLayout({

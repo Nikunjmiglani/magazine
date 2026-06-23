@@ -13,33 +13,85 @@ const links = [
 
 export default function Navbar() {
   return (
-    <header className="pt-8">
+    <header className="pt-16">
       <div className="container-editorial">
+        {/* Logo */}
 
-        <motion.h1
-          initial={{ opacity: 0, y: -20 }}
+        <motion.div
+          initial={{ opacity: 0, y: -25 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.8 }}
+        >
+         <h1
+  className="
+    heading-font
+    text-center
+    text-6xl
+    md:text-8xl
+    lg:text-[9.5rem]
+    leading-none
+    font-[300]
+    tracking-[-0.02em]
+  "
+>
+  Cordastra Literary
+</h1>
+
+         
+        </motion.div>
+
+        {/* Tagline */}
+
+        <div className="flex justify-center mt-8">
+          <div
+            className="
+              editorial-accent
+              px-6
+              py-2
+              text-[11px]
+              uppercase
+              tracking-[0.3em]
+            "
+          >
+            Literature • Essays • Poetry • Culture
+          </div>
+        </div>
+
+        {/* Navigation */}
+
+        <div
           className="
-            heading-font
-            text-center
-            text-6xl
-            md:text-8xl
-            lg:text-[9rem]
-            leading-none
+            mt-12
+            border-b
+            editorial-border
+            pb-8
           "
         >
-          cordastra literary
-        </motion.h1>
-
-        <div className="mt-8 border-b editorial-border pb-5">
           <nav>
-            <ul className="flex items-center justify-between text-sm md:text-base">
+            <ul
+              className="
+                flex
+                items-center
+                justify-between
+                text-[11px]
+                md:text-xs
+                uppercase
+                tracking-[0.22em]
+                font-medium
+              "
+            >
               {links.map((link) => (
                 <li key={link}>
                   <Link
                     href="#"
-                    className="group relative"
+                    className="
+                      relative
+                      group
+                      py-2
+                      transition-opacity
+                      duration-300
+                      hover:opacity-70
+                    "
                   >
                     {link}
 
@@ -47,7 +99,7 @@ export default function Navbar() {
                       className="
                         absolute
                         left-0
-                        -bottom-1
+                        bottom-0
                         h-[1px]
                         w-0
                         bg-black
@@ -61,12 +113,6 @@ export default function Navbar() {
               ))}
             </ul>
           </nav>
-        </div>
-
-        <div className="flex justify-center mt-5">
-          <div className="editorial-accent px-8 py-2 text-sm tracking-wide">
-            multimedia magazine for the indulgent
-          </div>
         </div>
       </div>
     </header>
