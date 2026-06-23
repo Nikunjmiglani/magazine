@@ -6,8 +6,9 @@ export default function HomePage() {
   return (
     <main>
       <Navbar />
+       <FeaturedArticles />
       <Hero />
-      <FeaturedArticles />
+     
     </main>
   );
 }
