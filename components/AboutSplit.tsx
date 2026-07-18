@@ -31,7 +31,14 @@ export default function AboutSplit() {
         <div className="py-20 px-6 md:px-16">
           <ul className="space-y-8">
             {menuItems.map((item, i) => (
-              <li key={item.label}>
+              <li key={item.label} className="relative pl-6">
+                {active === i && (
+                  <motion.span
+                    layoutId="aboutSplitIndicator"
+                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                    className="absolute left-0 top-1/2 -translate-y-1/2 h-8 w-[3px] bg-black"
+                  />
+                )}
                 <button
                   onMouseEnter={() => setActive(i)}
                   onFocus={() => setActive(i)}

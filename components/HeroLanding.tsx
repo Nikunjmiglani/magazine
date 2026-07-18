@@ -50,9 +50,7 @@ export default function HeroLanding() {
         }}
         className="flex flex-col items-center gap-3 mt-20"
       >
-        <span className="uppercase tracking-[0.3em] text-xs editorial-muted">
-          Discover More
-        </span>
+        
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
           <path
             d="M4 8L10 14L16 8"

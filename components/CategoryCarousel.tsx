@@ -41,7 +41,7 @@ export default function CategoryCarousel({
               transition={{ duration: 0.5, delay: i * 0.08 }}
               className="group cursor-pointer"
             >
-              <div className="overflow-hidden aspect-[4/3]">
+              <div className="overflow-hidden aspect-[4/3] max-w-[85%] mx-auto sm:mx-0">
                 <Image
                   src={item.image}
                   alt={item.title}

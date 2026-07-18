@@ -24,7 +24,7 @@ export default function Navbar() {
           </motion.div>
 
           {/* Nav links */}
-          <nav className="hidden md:block">
+          <nav className="hidden md:block md:ml-16">
             <ul className="flex items-center gap-10 text-[11px] uppercase tracking-[0.22em] font-medium">
               {links.map((link) => (
                 <li key={link}>
