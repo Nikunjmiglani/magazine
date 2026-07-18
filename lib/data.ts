@@ -38,3 +38,20 @@ export const featuredArticles = [
     image: "/articles/article-4.jpg",
   },
 ];
+
+// Append these exports into your existing lib/data.ts
+// (I don't have your current data.ts content, so swap the image paths
+// for real assets - these currently point at your existing /public files
+// as placeholders.)
+
+// Append this export into your existing lib/data.ts
+// (swap image paths for real assets - these are placeholders)
+
+export const readItems = [
+  { id: "p1", title: "Midnight Orchard", category: "Poetry", image: "/issue1.webp" },
+  { id: "p2", title: "The Cartographer's Grief", category: "Poetry", image: "/issue2.png" },
+  { id: "p3", title: "Salt & Marrow", category: "Poetry", image: "/issue1.webp" },
+  { id: "a1", title: "On Reading Slowly", category: "Articles", image: "/issue2.png" },
+  { id: "a2", title: "The Archive of Small Things", category: "Articles", image: "/issue1.webp" },
+  { id: "a3", title: "Notes from the Editor's Desk", category: "Articles", image: "/issue2.png" },
+];
