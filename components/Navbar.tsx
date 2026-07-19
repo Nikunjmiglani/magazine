@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const links = ["Issues", "Articles", "Contributors", "About"];
+const links = ["Issues", "Articles", "About"];
 
 export default function Navbar() {
   return (
@@ -24,7 +24,7 @@ export default function Navbar() {
           </motion.div>
 
           {/* Nav links */}
-          <nav className="hidden md:block md:ml-32">
+          <nav className="hidden md:block ml-auto mr-10">
             <ul className="flex items-center gap-10 text-[11px] uppercase tracking-[0.22em] font-medium">
               {links.map((link) => (
                 <li key={link}>
