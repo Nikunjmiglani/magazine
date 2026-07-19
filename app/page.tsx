@@ -3,6 +3,7 @@ import HeroLanding from "@/components/HeroLanding";
 import AboutSplit from "@/components/AboutSplit";
 import IssueShowcase from "@/components/IssueShowcase";
 import CategoryCarousel from "@/components/CategoryCarousel";
+import Footer from "@/components/Footer";
 import { readItems } from "@/lib/data";
 
 export default function HomePage() {
@@ -13,6 +14,7 @@ export default function HomePage() {
       <AboutSplit />
       <IssueShowcase />
       <CategoryCarousel label="Poetry & Articles" items={readItems} />
+      <Footer />
     </main>
   );
 }
