@@ -55,8 +55,8 @@ export default function CategoryCarousel({
           ))}
         </div>
 
-        {/* Desktop: tight edge-to-edge portrait row, scrolls horizontally */}
-        <div className="hidden md:flex gap-1 overflow-x-auto">
+        {/* Desktop: wrapping grid, tighter spacing */}
+        <div className="hidden md:grid grid-cols-3 gap-x-3 gap-y-6">
           {items.map((item, i) => (
             <motion.div
               key={item.id}
@@ -64,9 +64,9 @@ export default function CategoryCarousel({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.06 }}
-              className="group cursor-pointer shrink-0 w-[23%]"
+              className="group cursor-pointer"
             >
-              <div className="overflow-hidden aspect-[3/4]">
+              <div className="overflow-hidden aspect-[16/10]">
                 <Image
                   src={item.image}
                   alt={item.title}
